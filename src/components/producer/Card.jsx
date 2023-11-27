@@ -2,14 +2,14 @@ import { PlayIcon } from "@heroicons/react/24/outline";
 
 const Card = () => {
   return (
-    <div className="w-full rounded-xl border flex justify-between my-4">
+    <div className="w-full rounded-xl border border-gray-300 flex justify-between my-4">
     <div className="flex gap-2 ">
       <img src="src\assets\hero.png" alt="icon" className="w-28" />
       <div className="p-2">
         <h1 className="text-2xl text-customBlack font-semibold">
           Beat Title
         </h1>
-        <h3 className="text-xl text-gray-600">Description about the beat</h3>
+        <h3 className="text-lg my-2 text-gray-600">Description about the beat</h3>
         <p className="text-gray-400">Created: 12/2/2023</p>
       </div>
     </div>

@@ -49,7 +49,7 @@ const ProducerDashboard = () => {
           />
         </div>
         <div className="my-14">
-            <Table />
+            <Table totalItems='10'/>
         </div>
       </div>
     </div>
