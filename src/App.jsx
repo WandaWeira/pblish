@@ -1,5 +1,6 @@
 import ExploreArtists from "./components/ExploreArtists";
 import ExploreProducers from "./components/ExploreProducers";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 
@@ -10,6 +11,7 @@ function App() {
       <Hero />
       <ExploreProducers />
       <ExploreArtists />
+      <Footer />
     </div>
   );
 }

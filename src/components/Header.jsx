@@ -34,7 +34,7 @@ const Header = () => {
         </ul>
         <div className="flex gap-12">
           <button className="uppercase">Login</button>
-          <button className="uppercase border-blue-600 p-2 border-2 text-blue-600 rounded-3xl">
+          <button className="uppercase border-sky-600 p-2 border-2 text-sky-600 rounded-3xl">
             Signup
           </button>
         </div>
