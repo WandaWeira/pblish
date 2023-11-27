@@ -6,6 +6,7 @@ import Hero from "./components/Hero";
 import Login from "./components/Login";
 import { Routes, Route } from "react-router-dom";
 import Register from "./components/Register";
+import ChooseUser from "./components/ChooseUser";
 
 function App() {
   return (
@@ -28,6 +29,8 @@ function App() {
         {/* Route for the login page */}
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
+        <Route path="user" element={<ChooseUser />} />
+        
       </Routes>
     </div>
   );
