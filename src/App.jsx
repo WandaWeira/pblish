@@ -7,6 +7,7 @@ import Login from "./components/Login";
 import { Routes, Route } from "react-router-dom";
 import Register from "./components/Register";
 import ChooseUser from "./components/ChooseUser";
+import ProducerDashboard from "./components/producer/ProducerDashboard";
 
 function App() {
   return (
@@ -30,7 +31,7 @@ function App() {
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
         <Route path="user" element={<ChooseUser />} />
-        
+        <Route path="ProducerDashboard" element={<ProducerDashboard />} />
       </Routes>
     </div>
   );

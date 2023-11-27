@@ -74,12 +74,14 @@ const Register = () => {
               required
             />
           </div>
-          <button
-            type="submit"
-            className="bg-sky-600 hover:bg-sky-900 text-white font-semibold py-2 px-4 rounded w-full"
-          >
-            Register
-          </button>
+          <Link to="/ProducerDashboard">
+            <button
+              type="submit"
+              className="bg-sky-600 hover:bg-sky-900 text-white font-semibold py-2 px-4 rounded w-full"
+            >
+              Register
+            </button>
+          </Link>
         </form>
         <div className="items-center mt-10">
           <span className="text-gray-400">Have an account?</span>{" "}
