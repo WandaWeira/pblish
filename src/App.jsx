@@ -1,9 +1,11 @@
 import Header from "./components/Header";
+import Hero from "./components/Hero";
 
 function App() {
   return (
-    <div className="bg-customSmokeWhite min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col text-customBlack bg-customWhite">
       <Header />
+      <Hero />
     </div>
   );
 }
