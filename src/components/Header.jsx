@@ -1,5 +1,6 @@
 import logo from "../assets/logo.png";
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,7 +34,9 @@ const Header = () => {
           <li>Help</li>
         </ul>
         <div className="flex gap-12">
-          <button className="uppercase">Login</button>
+          <Link to="/login">
+            <button className="uppercase">Login</button>
+          </Link>
           <button className="uppercase border-sky-600 p-2 border-2 text-sky-600 rounded-3xl">
             Signup
           </button>
