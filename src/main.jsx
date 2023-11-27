@@ -12,6 +12,7 @@ import Login from "./components/Login.jsx";
 import Register from "./components/Register.jsx";
 import ChooseUser from "./components/ChooseUser.jsx";
 import ProducerDashboard from "./components/producer/ProducerDashboard.jsx";
+import Beats from "./components/producer/Beats.jsx";
 
 const router = createBrowserRouter([
   {
@@ -21,7 +22,8 @@ const router = createBrowserRouter([
       { path: "login", element: <Login /> },
       { path: 'register', element: <Register />},
       { path: 'user', element: <ChooseUser />},
-      { path: 'ProducerDashboard', element: <ProducerDashboard />}
+      { path: 'ProducerDashboard', element: <ProducerDashboard />},
+      { path: 'beats', element: <Beats />}
       // ProducerDashboard
       // Define other routes as children as needed
     ],

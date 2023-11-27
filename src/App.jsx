@@ -8,12 +8,12 @@ import { Routes, Route } from "react-router-dom";
 import Register from "./components/Register";
 import ChooseUser from "./components/ChooseUser";
 import ProducerDashboard from "./components/producer/ProducerDashboard";
+import Beats from "./components/producer/Beats";
 
 function App() {
   return (
     <div className="min-h-screen flex flex-col text-customBlack bg-customWhite">
       <Routes>
-        {/* Route for the main page */}
         <Route
           path="/"
           element={
@@ -26,12 +26,11 @@ function App() {
             </>
           }
         />
-
-        {/* Route for the login page */}
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
         <Route path="user" element={<ChooseUser />} />
         <Route path="ProducerDashboard" element={<ProducerDashboard />} />
+        <Route path="beats" element={<Beats />} />
       </Routes>
     </div>
   );
