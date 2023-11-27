@@ -9,6 +9,7 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import Login from "./components/Login.jsx";
+import Register from "./components/Register.jsx";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       { path: "login", element: <Login /> },
+      { path: 'register', element: <Register />}
       // Define other routes as children as needed
     ],
   },

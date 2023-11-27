@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Login from "./components/Login";
 import { Routes, Route } from "react-router-dom";
+import Register from "./components/Register";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
 
         {/* Route for the login page */}
         <Route path="login" element={<Login />} />
+        <Route path="register" element={<Register />} />
       </Routes>
     </div>
   );
