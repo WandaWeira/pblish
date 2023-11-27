@@ -1,9 +1,8 @@
-import React from "react";
 import GridItem from "./GridItem";
 
-const ExploreProducers = () => {
+const ExploreArtists = () => {
   return (
-    <>
+    <div className="my-28">
       <div className="grid grid-cols-3 gap-4 mx-28 my-8">
         <GridItem />
         <GridItem />
@@ -14,11 +13,11 @@ const ExploreProducers = () => {
       </div>
       <div className="flex justify-center items-center w-full h-full">
         <button className="uppercase bg-sky-600 text-white p-2 rounded-3xl w-60">
-          Explore Producers
+          Explore Artists
         </button>
       </div>
-    </>
+    </div>
   );
 };
 
-export default ExploreProducers;
+export default ExploreArtists;
