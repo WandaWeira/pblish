@@ -7,7 +7,7 @@ const Hero = () => {
         <h1 className="font-semibold text-5xl my-10 leading-tight">Compose melodies in unity, while physically separated with Pblish</h1>
         {/* <p className="text-3xl">Online collaborative studios for crafting original music with friends, bandmates, and countless musicians globally.</p> */}
         <p className="my-4">The Premier App for Music Production and Artistry Collaboration</p>
-        <button className="uppercase bg-sky-600 text-white p-2 rounded-xl my-4">
+        <button className="uppercase bg-sky-600 text-white p-2 rounded-3xl my-4 w-1/4">
           Get Started
         </button>
       </div>
