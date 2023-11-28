@@ -77,7 +77,7 @@ const Register = () => {
           <Link to="/dashboard">
             <button
               type="submit"
-              className="bg-sky-600 hover:bg-sky-900 text-white font-semibold py-2 px-4 rounded w-full"
+              className="bg-sky-600 hover:bg-sky-900 text-white font-semibold py-2 px-4 rounded w-full mt-4"
             >
               Register
             </button>

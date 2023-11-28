@@ -68,7 +68,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
           <button
             key={item}
             className={`rounded border w-8 ${
-              item === currentPage ? "bg-sky-600" : ""
+              item === currentPage ? "border-gray-600" : ""
             }`}
             onClick={() => onPageChange(item)}
           >

@@ -7,7 +7,7 @@ const Card = () => {
         <img
           src="https://media.gettyimages.com/id/994318634/photo/young-hipster-african-american-rapper-recording-songs-in-music-recording-studio.jpg?s=612x612&w=0&k=20&c=A2iXa5XXStfOQ9477mTTjMc6ml6cCkrPn4Kr9oqECg8="
           alt="icon"
-          className="w-28 h-auto object-cover m-1"
+          className="w-28 h-auto object-cover m-1 rounded-lg"
         />
         <div className="p-2">
           <h1 className="text-2xl text-customBlack font-semibold">
@@ -23,7 +23,7 @@ const Card = () => {
         <button className="p-2 text-customWhite bg-gray-500 h-10 w-28 rounded-xl">
           Open
         </button>
-        <div className="flex justify-center items-center p-2 text-customWhite bg-sky-600 h-10 w-28 rounded-xl">
+        <div className="flex justify-center items-center p-2 text-customWhite bg-customBlack h-10 w-28 rounded-xl">
           <PlayIcon className="h-5 w-6" />
         </div>
       </div>
