@@ -149,19 +149,19 @@ const CreateBeat = () => {
             />
             <label
               htmlFor="file-upload"
-              className="cursor-pointer mr-2 mb-2 inline-block bg-sky-400 text-white font-bold py-2 px-4 rounded"
+              className="cursor-pointer mr-2 mb-2 inline-block border border-customBlack text-customBlack font-bold py-2 px-4 rounded"
             >
               Browse
             </label>
             <button
               onClick={handleUpload}
-              className="mr-2 mb-2 inline-block bg-green-500 text-white font-bold py-2 px-4 rounded"
+              className="mr-2 mb-2 inline-block bg-sky-500 text-white font-bold py-2 px-4 rounded"
             >
               Upload
             </button>
             <button
               onClick={handleCancel}
-              className="mb-2 inline-block bg-red-500 text-white font-bold py-2 px-4 rounded"
+              className="mb-2 inline-block bg-customBlack text-white font-bold py-2 px-4 rounded"
             >
               &times;
             </button>
@@ -183,7 +183,7 @@ const CreateBeat = () => {
       <div className="flex justify-between">
         <button
           onClick={handleCancel}
-          className="mb-2 inline-block bg-red-500 text-white font-bold py-2 px-4 rounded uppercase"
+          className="mb-2 inline-block bg-customBlack text-white font-bold py-2 px-4 rounded uppercase"
         >
           Cancel
         </button>
