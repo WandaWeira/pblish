@@ -3,7 +3,6 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import {
-  Route,
   RouterProvider,
   createBrowserRouter,
   createRoutesFromElements,
@@ -13,6 +12,7 @@ import Register from "./components/Register.jsx";
 import ChooseUser from "./components/ChooseUser.jsx";
 import ProducerDashboard from "./components/producer/ProducerDashboard.jsx";
 import Beats from "./components/producer/Beats.jsx";
+import DashboardLayout from "./components/producer/DashboardLayout.jsx";
 
 const router = createBrowserRouter([
   {
@@ -23,12 +23,10 @@ const router = createBrowserRouter([
       { path: 'register', element: <Register />},
       { path: 'user', element: <ChooseUser />},
       { path: 'ProducerDashboard', element: <ProducerDashboard />},
-      { path: 'beats', element: <Beats />}
-      // ProducerDashboard
-      // Define other routes as children as needed
+      { path: 'beats', element: <Beats />},
+      { path: 'dashboard', element: <DashboardLayout />}
     ],
   },
-  // You can define other routes outside of the main layout as needed
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

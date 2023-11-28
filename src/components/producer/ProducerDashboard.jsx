@@ -2,19 +2,13 @@ import {
   MusicalNoteIcon,
   FolderIcon,
   UserIcon,
-  PlusIcon,
-  MagnifyingGlassIcon,
 } from "@heroicons/react/24/outline";
 import CardItem from "../CardItem";
-import TopBar from "../Topbar";
-import Table from "./Table";
 
 const ProducerDashboard = () => {
   return (
-    <div className="mx-28">
-      <TopBar />
+    <div className="mx-5">
       <div className="mt-4">
-        <h1 className="text-2xl">Dashboard / Producer</h1>
         <div className="flex items-center gap-5 mt-8 ">
           <CardItem
             link="/beats"

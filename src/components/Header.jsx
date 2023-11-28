@@ -33,13 +33,15 @@ const Header = () => {
           <li>Feature</li>
           <li>Help</li>
         </ul>
-        <div className="flex gap-12">
+        <div className="flex gap-12 items-center">
           <Link to="/login">
             <button className="uppercase">Login</button>
           </Link>
-          <button className="uppercase border-sky-600 p-2 border-2 text-sky-600 rounded-3xl">
-            Signup
-          </button>
+          <Link to="/user">
+            <button className="uppercase border-sky-600 p-2 border-2 text-sky-600 rounded-3xl">
+              Signup
+            </button>
+          </Link>
         </div>
       </div>
     </div>

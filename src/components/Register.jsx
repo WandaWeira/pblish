@@ -74,7 +74,7 @@ const Register = () => {
               required
             />
           </div>
-          <Link to="/ProducerDashboard">
+          <Link to="/dashboard">
             <button
               type="submit"
               className="bg-sky-600 hover:bg-sky-900 text-white font-semibold py-2 px-4 rounded w-full"

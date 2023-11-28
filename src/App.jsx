@@ -1,12 +1,9 @@
-import ExploreArtists from "./components/ExploreArtists";
-import ExploreProducers from "./components/ExploreProducers";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Login from "./components/Login";
 import { Routes, Route } from "react-router-dom";
+import Login from "./components/Login";
 import Register from "./components/Register";
 import ChooseUser from "./components/ChooseUser";
+import DashboardLayout from "./components/producer/DashboardLayout";
+import Home from "./components/Home";
 import ProducerDashboard from "./components/producer/ProducerDashboard";
 import Beats from "./components/producer/Beats";
 
@@ -14,23 +11,16 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col text-customBlack bg-customWhite">
       <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <Header />
-              <Hero />
-              <ExploreProducers />
-              <ExploreArtists />
-              <Footer />
-            </>
-          }
-        />
+        <Route path="/" element={<Home />} />
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
         <Route path="user" element={<ChooseUser />} />
-        <Route path="ProducerDashboard" element={<ProducerDashboard />} />
-        <Route path="beats" element={<Beats />} />
+        {/* Dashboard Layout Route */}
+        <Route path="dashboard" element={<DashboardLayout />}>
+          <Route index element={<ProducerDashboard />} />
+          <Route path="producerdashboard" element={<ProducerDashboard />} />
+          <Route path="beats" element={<Beats />} />
+        </Route>
       </Routes>
     </div>
   );
