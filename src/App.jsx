@@ -18,7 +18,7 @@ function App() {
         {/* Dashboard Layout Route */}
         <Route path="dashboard" element={<DashboardLayout />}>
           <Route index element={<ProducerDashboard />} />
-          <Route path="producerdashboard" element={<ProducerDashboard />} />
+          <Route path="dashboard/producerdashboard" element={<ProducerDashboard />} />
           <Route path="/dashboard/beats" element={<Beats />} />
         </Route>
       </Routes>
