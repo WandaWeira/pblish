@@ -7,7 +7,7 @@ const CardItem = ({ title, desc, icon, link }) => {
       <Link to={link}>
         <div className="flex justify-between ">
           <div className="flex flex-col justify-center">
-            <h1 className="text-xl text-sky-600">{title}</h1>
+            <h1 className="text-xl font-bold text-sky-600">{title}</h1>
             <h3 className="text-2xl text-sky-600">{desc}</h3>
           </div>
           {icon}

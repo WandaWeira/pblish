@@ -6,6 +6,7 @@ import DashboardLayout from "./components/producer/DashboardLayout";
 import Home from "./components/Home";
 import ProducerDashboard from "./components/producer/ProducerDashboard";
 import Beats from "./components/producer/Beats";
+import CreateBeat from "./components/producer/CreateBeat";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route index element={<ProducerDashboard />} />
           <Route path="dashboard/producerdashboard" element={<ProducerDashboard />} />
           <Route path="/dashboard/beats" element={<Beats />} />
+          <Route path="/dashboard/createBeats" element={<CreateBeat />} />
         </Route>
       </Routes>
     </div>
