@@ -16,7 +16,7 @@ const ProducerDashboard = () => {
             title="Beats"
             desc="123"
             icon={
-              <FolderIcon className="h-10 w-10 text-darkGray font-semibold" />
+              <FolderIcon className="h-10 w-10 text-customBlack font-semibold" />
             }
           />
           <CardItem
@@ -25,7 +25,7 @@ const ProducerDashboard = () => {
             title="My Uploads"
             desc="13"
             icon={
-              <FolderIcon className="h-10 w-10 text-sky-600 font-semibold" />
+              <FolderIcon className="h-10 w-10 text-customBlack font-semibold" />
             }
           />
           <CardItem
@@ -34,7 +34,7 @@ const ProducerDashboard = () => {
             title="Music"
             desc="100"
             icon={
-              <MusicalNoteIcon className="h-10 w-10 text-sky-600 font-semibold" />
+              <MusicalNoteIcon className="h-10 w-10 text-customBlack font-semibold" />
             }
           />
           <CardItem
@@ -43,7 +43,7 @@ const ProducerDashboard = () => {
             title="Artists collaboration"
             desc="13"
             icon={
-              <UserIcon className="h-10 w-10 text-sky-600 font-semibold" />
+              <UserIcon className="h-10 w-10 text-customBlack font-semibold" />
             }
           />
         </div>
