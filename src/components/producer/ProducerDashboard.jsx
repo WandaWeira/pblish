@@ -11,7 +11,7 @@ const ProducerDashboard = () => {
       <div className="mt-4">
         <div className="flex items-center gap-5 mt-8 ">
           <CardItem
-            link="/beats"
+            link="/dashboard/beats"
             color="bg-sky-300"
             title="Beats"
             desc="123"
@@ -20,7 +20,7 @@ const ProducerDashboard = () => {
             }
           />
           <CardItem
-            link="/beats"
+            link="/dashboard/beats"
             color="bg-teal-300"
             title="My Uploads"
             desc="13"
@@ -29,7 +29,7 @@ const ProducerDashboard = () => {
             }
           />
           <CardItem
-            link="/beats"
+            link="/dashboard/beats"
             color="bg-indigo-300"
             title="Music"
             desc="100"
@@ -38,7 +38,7 @@ const ProducerDashboard = () => {
             }
           />
           <CardItem
-            link="/beats"
+            link="/dashboard/beats"
             color="bg-blue-300"
             title="Artists collaboration"
             desc="13"

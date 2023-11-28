@@ -19,7 +19,7 @@ function App() {
         <Route path="dashboard" element={<DashboardLayout />}>
           <Route index element={<ProducerDashboard />} />
           <Route path="producerdashboard" element={<ProducerDashboard />} />
-          <Route path="beats" element={<Beats />} />
+          <Route path="/dashboard/beats" element={<Beats />} />
         </Route>
       </Routes>
     </div>
