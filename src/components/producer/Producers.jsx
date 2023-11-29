@@ -1,5 +1,4 @@
-import React, { useState, useEffect, useMemo } from "react";
-import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
+import React, { useState } from "react";
 
 const people = [
   {
@@ -7,7 +6,7 @@ const people = [
     title: "Regional Paradigm Technician",
     department: "Optimization",
     role: "Admin",
-    email: "jane.cooper@example.com",
+    email: "jane.cooper@example.com1",
     image: "https://bit.ly/33HnjK0",
   },
   {
@@ -15,7 +14,7 @@ const people = [
     title: "Regional Paradigm Technician",
     department: "Optimization",
     role: "Tester",
-    email: "john.doe@example.com",
+    email: "john.doe@example.com2",
     image: "https://bit.ly/3I9nL2D",
   },
   {
@@ -23,7 +22,7 @@ const people = [
     title: "Regional Paradigm Technician",
     department: "Optimization",
     role: " Software Engineer",
-    email: "veronica.lodge@example.com",
+    email: "veronica.lodge@example.com3",
     image: "https://bit.ly/3vaOTe1",
   },
   {
@@ -31,7 +30,7 @@ const people = [
     title: "Regional Paradigm Technician",
     department: "Optimization",
     role: "Tester",
-    email: "john.doe@example.com",
+    email: "john.doe@example.com4",
     image: "https://bit.ly/3I9nL2D",
   },
   {
@@ -39,7 +38,7 @@ const people = [
     title: "Regional Paradigm Technician",
     department: "Optimization",
     role: "Admin",
-    email: "jane.cooper@example.com",
+    email: "jane.cooper@example.com5",
     image: "https://bit.ly/33HnjK0",
   },
   {
@@ -47,7 +46,7 @@ const people = [
     title: "Regional Paradigm Technician",
     department: "Optimization",
     role: " Software Engineer",
-    email: "veronica.lodge@example.com",
+    email: "veronica.lodge@example.com6",
     image: "https://bit.ly/3vaOTe1",
   },
   {
@@ -55,7 +54,7 @@ const people = [
     title: "Regional Paradigm Technician",
     department: "Optimization",
     role: " Software Engineer",
-    email: "veronica.lodge@example.com",
+    email: "veronica.lodge@example.com7",
     image: "https://bit.ly/3vaOTe1",
   },
   {
@@ -63,7 +62,7 @@ const people = [
     title: "Regional Paradigm Technician",
     department: "Optimization",
     role: " Software Engineer",
-    email: "veronica.lodge@example.com",
+    email: "veronica.lodge@example.com8",
     image: "https://bit.ly/3vaOTe1",
   },
   {
@@ -71,7 +70,7 @@ const people = [
     title: "Regional Paradigm Technician",
     department: "Optimization",
     role: "Admin",
-    email: "jane.cooper@example.com",
+    email: "jane.cooper@example.com9",
     image: "https://bit.ly/33HnjK0",
   },
   {
@@ -79,7 +78,7 @@ const people = [
     title: "Regional Paradigm Technician",
     department: "Optimization",
     role: "Tester",
-    email: "john.doe@example.com",
+    email: "john.doe@example.com0",
     image: "https://bit.ly/3I9nL2D",
   },
   // More people...
