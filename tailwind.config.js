@@ -10,8 +10,7 @@ export default {
         customBlack: "#202022",
         customWhite: "#FCFCFC",
         customSmokeWhite: "#EEEEEE",
-        darkGray: "#9E9E9E",
-        tangerineYellow: "#FFC907"
+        darkGray: "#9E9E9E"
       },
       
     },

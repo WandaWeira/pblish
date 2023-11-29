@@ -7,7 +7,10 @@ import Home from "./components/Home";
 import ProducerDashboard from "./components/producer/ProducerDashboard";
 import Beats from "./components/producer/Beats";
 import CreateBeat from "./components/producer/CreateBeat";
-import OpenBeat from "./components/OpenBeat";
+import Artists from "./components/artist/Artists";
+import Producers from "./components/producer/Producers";
+import Music from "./components/Music";
+import Collaborate from "./components/Collaborate";
 
 function App() {
   return (
@@ -23,7 +26,10 @@ function App() {
           <Route path="dashboard/producerdashboard" element={<ProducerDashboard />} />
           <Route path="/dashboard/beats" element={<Beats />} />
           <Route path="/dashboard/createBeats" element={<CreateBeat />} />
-          {/* <Route path="/dashboard/openbeat" element={<OpenBeat />} /> */}
+          <Route path="/dashboard/artists" element={<Artists />} />
+          <Route path="/dashboard/producers" element={<Producers />} />
+          <Route path="/dashboard/music" element={<Music />} />
+          <Route path="/dashboard/collaborate" element={<Collaborate />} />
         </Route>
       </Routes>
     </div>

@@ -39,7 +39,7 @@ const Beats = () => {
           onClick={openModal}
           className="bg-customBlack flex gap-4 items-center rounded-xl p-1 text-customWhite"
         >
-          <PlusIcon className="h-10 w-10 text-customWhite font-semibold" />
+          <PlusIcon className="h-8 w-8 text-customWhite font-semibold" />
           <p className="mx-2"> Upload Beat</p>
         </div>
 
