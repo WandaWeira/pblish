@@ -8,7 +8,7 @@ const Sidebar = () => {
     setActiveItem(item);
   };
 
-  const sidebarItems = ["Dashboard", "Beats", "Artists", "Producers", "Music"];
+  const sidebarItems = ["Dashboard", "Beats", "Artists", "Producers", "Music", "Collaborate"];
 
   return (
     <div className="fixed h-screen p-4 shadow-2xl bg-gray-100 overflow-y-auto w-1/6">

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { PlusIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import Table from "./Table";
 import Modal from "../Modal";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 const Beats = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -10,12 +10,12 @@ const Beats = () => {
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
   const handleFiles = (event) => {
     const uploadedFile = event.target.files[0];
     // Navigate to createBeats page with the file in state
-    navigate('/dashboard/createBeats', { state: { file: uploadedFile } });
+    navigate("/dashboard/createBeats", { state: { file: uploadedFile } });
   };
 
   return (

@@ -14,6 +14,7 @@ import ProducerDashboard from "./components/producer/ProducerDashboard.jsx";
 import Beats from "./components/producer/Beats.jsx";
 import DashboardLayout from "./components/producer/DashboardLayout.jsx";
 import CreateBeat from "./components/producer/CreateBeat.jsx";
+import OpenBeat from "./components/OpenBeat.jsx";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,7 @@ const router = createBrowserRouter([
       { path: "/dashboard/beats", element: <Beats /> },
       { path: "dashboard", element: <DashboardLayout /> },
       { path: "dashboard/createBeats", element: <CreateBeat /> },
+      // { path: "dashboard/openbeat", element: <OpenBeat /> },
     ],
   },
 ]);

@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import ProducerDashboard from "./components/producer/ProducerDashboard";
 import Beats from "./components/producer/Beats";
 import CreateBeat from "./components/producer/CreateBeat";
+import OpenBeat from "./components/OpenBeat";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="dashboard/producerdashboard" element={<ProducerDashboard />} />
           <Route path="/dashboard/beats" element={<Beats />} />
           <Route path="/dashboard/createBeats" element={<CreateBeat />} />
+          {/* <Route path="/dashboard/openbeat" element={<OpenBeat />} /> */}
         </Route>
       </Routes>
     </div>
