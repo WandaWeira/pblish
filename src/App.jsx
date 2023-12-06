@@ -11,6 +11,7 @@ import Artists from "./components/artist/Artists";
 import Producers from "./components/producer/Producers";
 import Music from "./components/Music";
 import Collaborate from "./components/Collaborate";
+import OpenBeat from "./components/OpenBeat";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="/dashboard/producers" element={<Producers />} />
           <Route path="/dashboard/music" element={<Music />} />
           <Route path="/dashboard/collaborate" element={<Collaborate />} />
+          <Route path="/dashboard/openbeat" element={<OpenBeat />} />
         </Route>
       </Routes>
     </div>

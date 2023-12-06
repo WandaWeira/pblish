@@ -21,9 +21,7 @@ const Card = () => {
           className="w-28 h-auto object-cover m-1 rounded-lg"
         />
         <div className="p-2">
-          <h1 className="text-xl text-customBlack font-semibold">
-            Beat Title
-          </h1>
+          <h1 className="text-xl text-customBlack font-semibold">Beat Title</h1>
           <h3 className="text-md my-2 text-gray-600">
             Description about the beat
           </h3>
@@ -31,12 +29,14 @@ const Card = () => {
         </div>
       </div>
       <div className="flex items-center gap-8 mr-5">
-        <button
-          onClick={openModal}
-          className="p-2 text-customWhite bg-gray-500 h-10 w-28 rounded-xl"
-        >
-          Open
-        </button>
+        <Link to="/dashboard/openbeat">
+          <button
+            // onClick={openModal}
+            className="p-2 text-customWhite bg-gray-500 h-10 w-28 rounded-xl"
+          >
+            Open
+          </button>
+        </Link>
 
         <div
           onClick={togglePlayer}
@@ -45,9 +45,9 @@ const Card = () => {
           <PlayIcon className="h-5 w-6" />
         </div>
       </div>
-      <Modal isOpen={isModalOpen} onClose={closeModal} className="w-full m-5">
+      {/* <Modal isOpen={isModalOpen} onClose={closeModal} className="w-full m-5">
         <OpenBeat />
-      </Modal>
+      </Modal> */}
       {/* Music Player */}
       {isPlayerVisible && (
         <div className="fixed bottom-0 left-0 right-0 p-2">
