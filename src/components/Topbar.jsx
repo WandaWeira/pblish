@@ -15,28 +15,22 @@ const TopBar = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <div
-      className={`flex items-center justify-between m-5 ${
-        scrolled ? "bg-gray-400" : ""
-      }`}
-    >
-      <h1 className="text-2xl text-darkGray">Dashboard / Producer</h1>
-      <div className="flex items-center gap-8">
+    <header className={`flex items-center justify-between m-5 ${scrolled ? "bg-gray-400" : ""}`}>
+      <h1 className="text-xl sm:text-2xl text-darkGray">Dashboard / Producer</h1>
+      <div className="flex items-center gap-4 sm:gap-8">
         <BellIcon className="w-5 h-5 text-darkGray" />
-        <p className="text-darkGray">Hi, Jane Doe</p>
+        <p className="text-sm sm:text-base text-darkGray">Hi, Jane Doe</p>
         <img
-          src="src/assets/hero.png"
-          alt="profile"
-          className="w-10 rounded-full border"
+          src="src\assets\hero.png" // Correct path
+          alt="Profile" // Descriptive alt text
+          className="w-8 sm:w-10 rounded-full border"
         />
       </div>
-    </div>
+    </header>
   );
 };
 

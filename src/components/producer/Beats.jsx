@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 const Beats = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
@@ -14,7 +15,7 @@ const Beats = () => {
 
   const handleFiles = (event) => {
     const uploadedFile = event.target.files[0];
-    // Navigate to createBeats page with the file in state
+    // Add your file validation and error handling here
     navigate("/dashboard/createBeats", { state: { file: uploadedFile } });
   };
 
@@ -25,11 +26,8 @@ const Beats = () => {
           <input
             type="text"
             placeholder="Search beat..."
-            className="py-2 pl-8 pr-4 w-[340px] h-[38px] rounded-xl border-2 bg-slate-200 font-normal border-gray-200 focus:outline-none focus:border-gray-300"
-            //   onChange={({ target }) => {
-            //     setSearchTerm(target.value);
-            //     setFilterTerm("");
-            //   }}
+            className="py-2 pl-8 pr-4 w-full sm:w-[340px] h-[38px] rounded-xl border-2 bg-slate-200 font-normal border-gray-200 focus:outline-none focus:border-gray-300"
+            onChange={({ target }) => setSearchTerm(target.value)}
           />
           <div className="absolute right-3 top-3">
             <MagnifyingGlassIcon className="w-6 h-6 text-darkGray" />
@@ -37,10 +35,10 @@ const Beats = () => {
         </div>
         <div
           onClick={openModal}
-          className="bg-customBlack flex gap-4 items-center rounded-xl p-1 text-customWhite"
+          className="bg-customBlack flex gap-4 items-center rounded-xl p-1 text-customWhite cursor-pointer"
         >
           <PlusIcon className="h-8 w-8 text-customWhite font-semibold" />
-          <p className="mx-2"> Upload Beat</p>
+          <p className="mx-2">Upload Beat</p>
         </div>
 
         <Modal isOpen={isModalOpen} onClose={closeModal} className="w-full m-5">
@@ -86,7 +84,7 @@ const Beats = () => {
         </Modal>
       </div>
       <div className="my-14">
-        <Table totalItems="10" />
+        <Table totalItems="10" searchTerm={searchTerm} />
       </div>
     </div>
   );

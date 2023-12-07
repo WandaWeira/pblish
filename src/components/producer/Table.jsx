@@ -57,13 +57,14 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
         disabled={currentPage === firstPage}
         onClick={() => onPageChange(currentPage - 1)}
         className="rounded border"
+        aria-label="Previous Page"
       >
         &lt;
       </button>
 
       {paginationItems().map((item, index) =>
         item === "..." ? (
-          <span key={index}>...</span>
+          <span key={`ellipsis-${index}`}>...</span>
         ) : (
           <button
             key={item}
@@ -71,6 +72,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
               item === currentPage ? "border-gray-600" : ""
             }`}
             onClick={() => onPageChange(item)}
+            aria-label={`Page ${item}`}
           >
             {item}
           </button>
@@ -81,6 +83,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
         disabled={currentPage === lastPage}
         onClick={() => onPageChange(currentPage + 1)}
         className="rounded border"
+        aria-label="Next Page"
       >
         &gt;
       </button>

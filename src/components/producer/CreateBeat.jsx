@@ -37,10 +37,12 @@ const CreateBeat = () => {
     setPreview(""); // Also clear the preview
   };
   return (
-    <div>
-      <h1 className="text-2xl text-customBlack">Create Beat/Vocal</h1>
-      <div className="flex gap-8 w-full">
-        <div className="my-10 w-1/2">
+    <div className="px-4 sm:px-8 md:px-16">
+      <h1 className="text-xl md:text-2xl text-customBlack my-4">
+        Create Beat/Vocal
+      </h1>
+      <div className="flex flex-col md:flex-row gap-4">
+        <div className="w-full md:w-1/2">
           <div className="my-2">
             <label
               htmlFor="beat-name"
@@ -93,7 +95,7 @@ const CreateBeat = () => {
             ></textarea>
           </div>
         </div>
-        <div className="my-10  w-1/2">
+        <div className="w-full md:w-1/2">
           <div className="mx-auto">
             <label
               htmlFor="beat-name"
@@ -180,14 +182,14 @@ const CreateBeat = () => {
         </div>
       </div>
 
-      <div className="flex justify-between">
+      <div className="flex flex-col md:flex-row justify-between mt-4">
         <button
           onClick={handleCancel}
           className="mb-2 inline-block bg-customBlack text-white font-bold py-2 px-4 rounded uppercase"
         >
           Cancel
         </button>
-        <button className="mr-2 mb-2 inline-block bg-sky-500 text-white font-bold py-2 px-4 rounded uppercase">
+        <button className="mb-2 inline-block bg-sky-500 text-white font-bold py-2 px-4 rounded uppercase">
           Create
         </button>
       </div>

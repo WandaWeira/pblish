@@ -48,11 +48,11 @@ const Collaborate = () => {
   };
 
   return (
-    <div>
+    <div className="px-4 md:px-8">
       {/* Select Beat */}
-      <p className="my-5 font-semibold">Select Beat</p>
+      <p className="my-5 font-semibold text-base md:text-lg">Select Beat</p>
       <select
-        className="form-select block w-full mt-1 border rounded-md p-2"
+        className="form-select block w-full mt-1 border rounded-md p-2 text-sm md:text-base"
         value={selectedAudioFile}
         onChange={handleChange}
       >
@@ -65,13 +65,16 @@ const Collaborate = () => {
       </select>
       {selectedAudioFile && (
         <div className="my-5">
-          <p className="my-5">Selected Beat: {selectedAudioFile}</p>
-          <audio src={selectedAudio} controls autoPlay />
+          <p className="my-5 text-sm md:text-base">
+            Selected Beat: {selectedAudioFile}
+          </p>
+          <audio src={selectedAudio} controls />
         </div>
       )}
 
+      {/* Upload Vocals */}
       <div className="my-5">
-        <p className="my-5 font-semibold">Upload Vocals</p>
+        <p className="my-5 font-semibold text-base md:text-lg">Upload Vocals</p>
         <input
           type="file"
           onChange={handleFileChange}
@@ -79,24 +82,25 @@ const Collaborate = () => {
           id="fileInput"
           style={{ display: "none" }}
         />
-
-        {/* Custom button to trigger file input */}
         <label
           htmlFor="fileInput"
-          className="cursor-pointer inline-block bg-sky-500 text-white font-medium py-2 px-4 rounded hover:bg-blue-700 transition duration-300 ease-in-out"
+          className="cursor-pointer inline-block bg-sky-500 text-white font-medium py-2 px-4 rounded hover:bg-blue-700 transition duration-300 ease-in-out text-sm md:text-base"
         >
           Select Vocal
         </label>
 
         {uploadedAudioFile && (
           <div className="my-2">
-            <p className="my-5">Selected Vocal File: {uploadedAudioFile}</p>
-            <audio src={uploadedAudio} controls autoPlay />
+            <p className="my-5 text-sm md:text-base">
+              Selected Vocal File: {uploadedAudioFile}
+            </p>
+            <audio src={uploadedAudio} controls />
           </div>
         )}
       </div>
+
       <div className="my-5">
-        <button className="p-2 bg-customBlack border rounded-md w-32 text-customWhite">
+        <button className="p-2 bg-customBlack border rounded-md w-full md:w-32 text-customWhite text-sm md:text-base">
           Combine
         </button>
       </div>
