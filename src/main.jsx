@@ -19,6 +19,7 @@ import Producers from "./components/producer/Producers.jsx";
 import Music from "./components/Music.jsx";
 import Collaborate from "./components/Collaborate.jsx";
 import OpenBeat from "./components/OpenBeat.jsx";
+import Vocals from "./components/producer/Vocals.jsx";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,7 @@ const router = createBrowserRouter([
       { path: "user", element: <ChooseUser /> },
       { path: "dashboard/producerdashboard", element: <ProducerDashboard /> },
       { path: "/dashboard/beats", element: <Beats /> },
+      { path: "/dashboard/vocals", element: <Vocals /> },
       { path: "dashboard", element: <DashboardLayout /> },
       { path: "dashboard/createBeats", element: <CreateBeat /> },
       { path: "dashboard/artists", element: <Artists /> },

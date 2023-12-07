@@ -35,10 +35,12 @@ const OpenBeat = () => {
           <ArrowDownIcon className="h-10 w-10" />
           <p>Download</p>
         </div>
-        <div className="p-2 text-customWhite bg-customBlack h-10 w-32 rounded-xl flex items-center gap-3">
-          <PlusIcon className="h-5 w-6" />
-          <p>Collaborate</p>
-        </div>
+        <Link to="/dashboard/collaborate">
+          <div className="p-2 text-customWhite bg-customBlack h-10 w-32 rounded-xl flex items-center gap-3">
+            <PlusIcon className="h-5 w-6" />
+            <p>Collaborate</p>
+          </div>
+        </Link>
       </div>
     </>
   );

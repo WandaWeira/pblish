@@ -38,7 +38,7 @@ const CreateBeat = () => {
   };
   return (
     <div>
-      <h1 className="text-2xl text-customBlack">Create Beat</h1>
+      <h1 className="text-2xl text-customBlack">Create Beat/Vocal</h1>
       <div className="flex gap-8 w-full">
         <div className="my-10 w-1/2">
           <div className="my-2">

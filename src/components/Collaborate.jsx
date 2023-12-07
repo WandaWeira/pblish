@@ -70,15 +70,24 @@ const Collaborate = () => {
         </div>
       )}
 
-      {/* Upload Vocals */}
-      <div className="my-5 p-4">
-        <p className="my-10 font-semibold">Upload Vocals</p>
+      <div className="my-5">
+        <p className="my-5 font-semibold">Upload Vocals</p>
         <input
           type="file"
           onChange={handleFileChange}
           accept="audio/*"
-          // ... rest of your input styling
+          id="fileInput"
+          style={{ display: "none" }}
         />
+
+        {/* Custom button to trigger file input */}
+        <label
+          htmlFor="fileInput"
+          className="cursor-pointer inline-block bg-sky-500 text-white font-medium py-2 px-4 rounded hover:bg-blue-700 transition duration-300 ease-in-out"
+        >
+          Select Vocal
+        </label>
+
         {uploadedAudioFile && (
           <div className="my-2">
             <p className="my-5">Selected Vocal File: {uploadedAudioFile}</p>
@@ -87,7 +96,9 @@ const Collaborate = () => {
         )}
       </div>
       <div className="my-5">
-        <button className="p-2 bg-sky-500 border rounded-md w-32">Combine</button>
+        <button className="p-2 bg-customBlack border rounded-md w-32 text-customWhite">
+          Combine
+        </button>
       </div>
     </div>
   );
