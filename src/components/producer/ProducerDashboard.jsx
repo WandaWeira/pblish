@@ -20,16 +20,16 @@ const ProducerDashboard = () => {
             }
           />
           <CardItem
-            link="/dashboard/beats"
+            link="/dashboard/vocals"
             // color="bg-teal-300"
-            title="My Uploads"
+            title="Vocals"
             desc="13"
             icon={
               <FolderIcon className="h-10 w-10 text-customBlack font-semibold" />
             }
           />
           <CardItem
-            link="/dashboard/beats"
+            link="/dashboard/music"
             // color="bg-indigo-300"
             title="Music"
             desc="100"
@@ -38,9 +38,9 @@ const ProducerDashboard = () => {
             }
           />
           <CardItem
-            link="/dashboard/beats"
+            link="/dashboard/artists"
             // color="bg-blue-300"
-            title="Artists collaboration"
+            title="Collaboration"
             desc="13"
             icon={
               <UserIcon className="h-10 w-10 text-customBlack font-semibold" />
