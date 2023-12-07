@@ -40,7 +40,7 @@ const ProducerDashboard = () => {
           <CardItem
             link="/dashboard/artists"
             // color="bg-blue-300"
-            title="Collaboration"
+            title="Collaborations"
             desc="13"
             icon={
               <UserIcon className="h-10 w-10 text-customBlack font-semibold" />

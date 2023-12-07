@@ -56,7 +56,7 @@ const Collaborate = () => {
         value={selectedAudioFile}
         onChange={handleChange}
       >
-        <option value="">Select an Audio File</option>
+        <option value="">Select Beat</option>
         {audioFiles.map((file, index) => (
           <option key={index} value={file.name}>
             {file.name}
