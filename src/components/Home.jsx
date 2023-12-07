@@ -4,7 +4,6 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 
-
 function Home() {
   return (
     <div className="min-h-screen flex flex-col text-customBlack bg-customWhite">

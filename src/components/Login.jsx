@@ -11,13 +11,17 @@ const Login = () => {
     console.log(email, password);
   };
   return (
-    <div className="flex justify-between">
-      <img src="src/assets/hero.png" alt="login" className="w-1/2 ml-60" />
-      <div className="mx-28 w-full">
-        <img src="src\assets\logo.png" alt="logo" className="w-32" />
-        <h1 className=" text-xl font-semibold">Welcome Back</h1>
-        <p className="my-8 text-gray-500">Login</p>
-        <form onSubmit={handleLogin} className="space-y-4 w-1/2">
+    <div className="flex flex-col md:flex-row justify-between items-center">
+      <img
+        src="src/assets/hero.png"
+        alt="login"
+        className="hidden md:block w-full md:w-1/2 max-w-md mx-auto my-4"
+      />
+      <div className="p-4 md:p-0 mx-4 md:mx-28 w-full max-w-lg">
+        <img src="src/assets/logo.png" alt="logo" className="w-32 mx-auto" />
+        <h1 className="text-xl font-semibold text-center">Welcome Back</h1>
+        <p className="my-8 text-gray-500 text-center">Login</p>
+        <form onSubmit={handleLogin} className="space-y-4">
           <div>
             <label htmlFor="email" className="text-sm font-semibold">
               Email
@@ -60,9 +64,11 @@ const Login = () => {
             Login
           </button>
         </form>
-        <div className="items-center mt-10">
+        <div className="text-center mt-10">
           <span className="text-gray-400">Don’t have an account?</span>{" "}
-          <Link to="/user" className="text-sm text-blue-600 hover:underline">Sign up</Link>
+          <Link to="/user" className="text-sm text-blue-600 hover:underline">
+            Sign up
+          </Link>
         </div>
       </div>
     </div>

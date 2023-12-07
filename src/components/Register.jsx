@@ -11,15 +11,19 @@ const Register = () => {
     console.log(email, password);
   };
   return (
-    <div className="flex justify-between">
-      <img src="src/assets/hero.png" alt="login" className="w-1/2 ml-60" />
-      <div className="mx-28 w-full">
-        <img src="src\assets\logo.png" alt="logo" className="w-32" />
-        <h1 className=" text-xl font-semibold">Welcome</h1>
-        <p className="my-8 text-gray-500">
+    <div className="flex flex-col md:flex-row justify-between items-center">
+      <img
+        src="src/assets/hero.png"
+        alt="register"
+        className="hidden md:block w-full md:w-1/2 max-w-md mx-auto my-4"
+      />
+      <div className="p-4 md:p-0 mx-4 md:mx-28 w-full max-w-lg">
+        <img src="src/assets/logo.png" alt="logo" className="w-32 mx-auto" />
+        <h1 className="text-xl font-semibold text-center">Welcome</h1>
+        <p className="my-8 text-gray-500 text-center">
           Register below to create your account
         </p>
-        <form onSubmit={handleRegsiter} className="space-y-4 w-1/2">
+        <form onSubmit={handleRegsiter} className="space-y-4">
           <div>
             <label htmlFor="email" className="text-sm font-semibold">
               Username
@@ -29,8 +33,8 @@ const Register = () => {
               id="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              placeholder="Jane Doe"
               className="mt-1 w-full p-2 border border-gray-300 rounded"
-              placeholder=""
               required
             />
           </div>
@@ -57,6 +61,7 @@ const Register = () => {
               id="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
+              placeholder="********"
               className="mt-1 w-full p-2 border border-gray-300 rounded"
               required
             />
@@ -70,6 +75,7 @@ const Register = () => {
               id="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
+              placeholder="********"
               className="mt-1 w-full p-2 border border-gray-300 rounded"
               required
             />
@@ -83,7 +89,7 @@ const Register = () => {
             </button>
           </Link>
         </form>
-        <div className="items-center mt-10">
+        <div className="text-center mt-10">
           <span className="text-gray-400">Have an account?</span>{" "}
           <Link to="/login" className="text-sm text-blue-600 hover:underline">
             Sign in
